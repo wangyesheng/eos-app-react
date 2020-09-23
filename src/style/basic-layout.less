@@ -1,0 +1,81 @@
+.app-sider-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 10px 30px;
+    z-index: 10;
+    min-height: 100%;
+    background: #fff;
+    transition: all .2s;
+
+    .app-sider-logo-wrap {
+        position: relative;
+        padding: 0 24px;
+        overflow: hidden;
+        background: #fff;
+        cursor: pointer;
+        transition: all .3s;
+        height: 68px;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 10px 30px;
+        line-height: 68px;
+        text-align: center;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+.app-content-container {
+    position: relative;
+    padding-left: 220px;
+
+    .ant-back-top-content {
+        background-color: rgba(100, 15, 220, 0.3);
+    }
+
+    .ant-back-top-content:hover {
+        background-color: rgba(100, 15, 220, 0.35);
+    }
+
+    .app-header-container {
+        position: fixed;
+        top: 0;
+        padding: 0px;
+        width: calc(100% - 220px);
+        z-index: 9;
+        right: 0px;
+        transition: width .2s;
+        height: 68px;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 10px 30px;
+    }
+
+    .app-main-container {
+        padding-top: 68px;
+
+        .app-main-wrap {
+            position: relative;
+            min-height: 100%;
+            margin: 24px;
+            transition: all .2s;
+
+            .app-breadcrumb-wrap {
+                margin-bottom: 24px;
+                font-size: 30px;
+            }
+
+            .app-main-background {
+                background: #fff;
+            }
+        }
+    }
+
+    .app-footer-container {
+        text-align: center;
+        padding: 0 0 24px;
+    }
+}
